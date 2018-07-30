@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+        <title>Globuzzer - Brochures</title>
+             <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/swiper.min.css">
+        <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+
+        <link href="grid/simple-grid.css" rel="stylesheet" />
+        <link rel="stylesheet" href="stylesheets/partner.css">
+        <link href="stylesheets/aboutuscss.css" rel="stylesheet"/>
+        <link href="stylesheets/slider.css" rel="stylesheet"/>
+
+        <!-- include the site js -->
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js" defer></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script defer src="js/all.js"></script>
+        <script src="js/jquery-latest.min.js"></script>
+       
+        <script type="text/javascript" src="js/jquery.main.js" defer></script>
+
+        <link rel="stylesheet" href="maps/css/map.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="maps/js/infoBubble.js"></script>
+
+
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/index.css">
+        <link rel="stylesheet" href="stylesheets/jquery-ui.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       
+
+        <script>
+         
+         var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+             
+             
+                                 
+        
+        
+        </script>
+
+    </head>
+    <body>
+        <div class="site-wrapper">
+
+            <header class="header">
+
+                <nav>
+                    <div class="header__logo-box">
+                        <a href="#"><img src="Materials/logo-gb-white.svg" alt="Logo" class="header__logo"></a>
+                    </div>
+                    <a href="#" class="toggle"><i class="fas fa-bars"></i></a>
+                    <div class="header__menu">
+                        <ul class="header__navigation">
+                            <a href="index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="#aboutus">
+                                <li>Contact</li>
+                            </a>
+
+                            <a href="#sections">
+                                <li>Package</li>
+                            </a>
+
+                    
+                        </ul>
+                    </div>
+                </nav>
+
+
+            </header>
+
+            <div class="feedback-holder center">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="images/img.jpg" style="width:100%">
+                      <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="images/img1.jpg" style="width:100%">
+                      <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="Materials/aboutus/andrea.jpg" style="width:100%">
+                      <div class="text">Caption Three</div>
+                    </div>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                </div>
+            
+           
+
+            <!-- Our story-->
+            <div class="feedback-holder center">
+
+             
+
+
+          <div class="col-12" style="margin: 0; width: 100%;">
+           
+           <div class="flexContainer flexSpaceAround">
+                <div class="active-video-col">
+                    <div id="parent" class="active-video" 
+                         style="background-image:  url(Materials/aboutus/andrea.jpg);background-size: 100%  100%;position: relative; left: 0; top: 0;">
+                        <iframe  width="100%" height="100%" frameborder="0" display=none allowfullscreen="" src=""> </iframe>
+                        <div id="play_button"  class="play_button_red" >
+                            <img id ="play_button_image" src="Images/video-play.png" width="50" height="50">
+                        </div>
+                    </div>
+                    <div class="testimonial-text"><strong><i>"It is better to travel well than to arrive"</i></strong> - The Budhha</div>
+                </div>
+               <!-- Vide Thumbnail Starts -->
+                <div class="video-thumbnail-col">
+                    <div class="video-thumbnails">
+                    <div id="rami_video" class="video-small"
+                         style="background-image:  url(Materials/aboutus/rami.jpg);background-size: 100% 100%" >
+
+
+                    </div> 
+                    <div id="andrea_video" class="video-small"
+                         style="background-image:  url(Materials/aboutus/andrea.jpg);background-size: 100% 100% " >
+
+
+                    </div> 
+                    <div id="rodion_video" class="video-small"
+                         style="background-image:  url(Materials/aboutus/rodion.jpg);background-size: 100% 100%" >
+
+
+                    </div> 
+                    <div id="jovita_video" class="video-small"
+                         style="background-image:  url(Materials/aboutus/jovita.jpg);background-size: 100% 100%" >
+
+
+                    </div> 
+
+                    <div id="jovita_video_dummy" class="video-small"
+                         style="background-image:  url(Materials/aboutus/jovita.jpg);background-size: 100% 100%" >
+
+
+                    </div>  
+                        
+                    
+
+
+                </div>
+
+               </div>
+               <!--Video thumbnail ends -->
+            </div>
+           </div>
+            <!--Here -->
+        </div>
+  </div>     
+
+    <footer class="footer">
+        <div id="contactus">
+            <div class="top-footer center">
+                <div class="head-office-content">
+                    <h2 class="top-footer__header heading-secondary--main">Our head office</h2>
+                    <div class="container-full-width">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="office-content-left">
+                                    <div class="office-content">
+                                        <h3>Want to collaborate with us:</h3>
+                                        <span class="block-line"><a href="mailto:&#098;&#117;&#115;&#105;&#110;&#101;&#115;&#115;&#064;&#103;&#108;&#111;&#098;&#117;&#122;&#122;&#101;&#114;&#046;&#099;&#111;&#109;">&#098;&#117;&#115;&#105;&#110;&#101;&#115;&#115;&#064;&#103;&#108;&#111;&#098;&#117;&#122;&#122;&#101;&#114;&#046;&#099;&#111;&#109;</a></span>
+                                        <h3>Follow us:</h3>
+                                        <ul class="social-links">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="Images/facebook-logo-button.svg" alt="image description">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="Images/social-instagram-circle.svg" alt="image description">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="Images/youtube.svg" alt="image description">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="Images/pinterest-logo-button.svg" alt="image description">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="Images/linkedin-logo.svg" alt="image description">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="Images/twitter-logo-button.svg" alt="image description">
+                                                </a>
+                                            </li>	
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="office-content-middle">
+                                    <div class="office-content no-padding">
+                                        <div class="map-responsive">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.0806838353435!2d18.072670416073045!3d59.348300981665425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d401191830f%3A0xff6e8bbbca445e6b!2sLindstedtsv%C3%A4gen+24%2C+114+28+Stockholm%2C+Sweden!5e0!3m2!1sen!2s!4v1525948084066" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>	
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="office-content-right">
+                                    <div class="office-content">
+                                        <h3>Globuzzer AB</h3>
+                                        <address>
+                                            <span class="address"><img class="address-ico" src="Images/facebook-placeholder-for-locate-places-on-maps.svg" alt="image description">  LindstedtsvÃƒÂ¤gen 24, 4thFloor, 114 28 Stockholm</span>
+                                            <span class="address"><img class="address-ico" src="Images/call.svg" alt="image description"> T: <a href="tel:46735555134">+46 73 555 5 134</a></span>
+                                            <span class="address"><img class="address-ico" src="Images/email-filled-closed-envelope.svg" alt="image description"> <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#103;&#108;&#111;&#098;&#117;&#122;&#122;&#101;&#114;&#046;&#099;&#111;&#109;">&#105;&#110;&#102;&#111;&#064;&#103;&#108;&#111;&#098;&#117;&#122;&#122;&#101;&#114;&#046;&#099;&#111;&#109;</a></span>
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <h2 class="top-footer__header heading-secondary--main">Contact us</h2>
+                <p class="top-footer__infor">If you have any questions, please don't hesitate to contact us.</p>
+
+                <div class="container">
+                    <form action="#" class="form-validation">
+                        <div class="row">
+                            <div class="col-6">
+                                <input class="form-field" data-required="true" type="text" id="fn" placeholder="Name *">
+                                <input class="form-field" data-required="true" type="email" id="email" placeholder="Email *">
+                                <input class="form-field" data-required="true" type="text" id="subject" placeholder="Subject *">
+                            </div>
+                            <div class="col-6">
+                                <textarea placeholder="Subject *" data-required="true" class="form-field"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn-submit btn--round btn--blue">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="bot-footer center">
+                <ul class="bot-footer__nav">
+                    <a href="#"><li>&#169; 2018 Globuzzer</li></a>
+                    <a href="#"><li>Term and Conditions</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>-->
+
+
+</div>	
+
+
+
+</body>
+</html>
