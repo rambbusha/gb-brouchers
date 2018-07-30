@@ -1,0 +1,541 @@
+/* ---- CSS Brochure ----- */
+.slice {
+    position: absolute;
+    float: left;
+    height: 272px;
+    width: 112px;
+    background-size: cover;
+}
+
+.s1 {
+    height: 250px;
+    width: 103px;
+    -webkit-box-shadow: inset -60px 1px 235px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: inset -60px 1px 235px 0px rgba(0, 0, 0, 0.23);
+    box-shadow: inset -60px 1px 235px 0px rgba(0, 0, 0, 0.23);
+}
+
+.s2 {
+    left: 65px;
+    top: -10px;
+    transform: perspective(600px) rotateY(-69deg);
+    -webkit-box-shadow: inset -65px 3px 235px -37px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -65px 3px 235px -37px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -65px 3px 235px -37px rgba(0, 0, 0, 0.75);
+}
+
+.s3 {
+    left: 138px;
+    top: -17px;
+    height: 286px;
+    transform: perspective(600px) rotateY(29deg);
+    -webkit-box-shadow: inset 77px 37px 235px -37px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: inset 77px 37px 235px -37px rgba(0, 0, 0, 0.41);
+    box-shadow: inset 77px 37px 235px -37px rgba(0, 0, 0, 0.41);
+}
+
+.s4 {
+    left: 199px;
+    height: 299px;
+    top: -23px;
+    transform: perspective(600px) rotateY(-74deg);
+    -webkit-box-shadow: inset -65px 3px 235px -37px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -65px 3px 235px -37px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -65px 3px 235px -37px rgba(0, 0, 0, 0.75);
+}
+
+.s5 {
+    left: 272px;
+    top: -37px;
+    height: 327px;
+    width: 134px;
+    -webkit-box-shadow: inset -60px -109px 235px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset -60px -109px 235px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: inset -60px -109px 235px 0px rgba(0, 0, 0, 0.08);
+}
+
+.s6 {
+    left: 364px;
+    transform: perspective(600px) rotateY(-74deg);
+    height: 355px;
+    top: -51px;
+    -webkit-box-shadow: inset -65px 3px 235px -37px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -65px 3px 235px -37px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -65px 3px 235px -37px rgba(0, 0, 0, 0.75);
+}
+
+.s7 {
+    top: -69px;
+    left: 437px;
+    height: 391px;
+    width: 159px;
+    -webkit-box-shadow: inset -60px -109px 235px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset -60px -109px 235px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: inset -60px -109px 235px 0px rgba(0, 0, 0, 0.08);
+}
+
+.s8 {
+    left: 577px;
+    height: 416px;
+    top: -82px;
+    transform: perspective(600px) rotateY(-44deg);
+    -webkit-box-shadow: inset 64px 0px 181px 25px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 64px 0px 181px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 64px 0px 181px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ---- Customize jQuery-dialog ---- */
+.ui-dialog .ui-dialog-titlebar {
+    background-color: #e75152;
+    background-image: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.ui-dialog {
+    padding: 0;
+}
+
+.ui-widget input {
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    width: 95%;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    display: flex;
+    justify-content: center;
+    float: none;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    background-image: none;
+    background-color: #e75152;
+    padding: 10px 30px;
+}
+
+.ui-widget-content label {
+    font-family: 'Roboto', sans-serif;
+    color: #555151;
+    font-size: 15px;
+}
+
+#warning {
+    display: none;
+    color: red;
+}
+
+/* ---- Content ---- */
+.brochure-container {
+    position: relative;
+    height: calc(100vh - 302px);
+    width: 70%;
+    margin-left: 15%;
+}
+
+.grey-heading {
+    font-size: 24px;
+    font-weight: 400;
+    color: #555151;
+    margin-top: 37px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.grey-heading span {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 26px;
+}
+
+.check-point {
+    color: #555151;
+    font-size: 15px;
+}
+
+.check-point span {
+    color: #000;
+    margin-right: 20px;
+}
+
+.check-point i {
+    font-style: normal;
+}
+
+#my-brochure {
+    position: absolute;
+    width: 561px;
+    top: 64px;
+    left: 43%;
+}
+
+.buttons.left {
+    margin-top: 40px;
+    justify-content: left;
+}
+
+.back-to-services {
+    margin-top: 165px;
+}
+
+.edge-btn-pink, .edge-btn-white {
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid #e75152;
+    padding: 10px 20px;
+    margin-bottom: 7px;
+    -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+    transition: 0.3s ease;
+}
+
+.edge-btn-pink {
+    background-color: #e75152;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.edge-btn-pink:hover {
+    background-color: #b34849;
+}
+
+.edge-btn-white {
+    color: #e75152;
+}
+
+.edge-btn-white:hover {
+    background-color: rgba(221, 78, 79, 0.23);
+}
+
+/* -- Grey Container -- */
+
+.light-grey-box {
+    float: left;
+    width: 100%;
+    background-color: #e5e5e5;
+}
+
+.service-container {
+    width: 900px;
+    margin: auto;
+}
+
+.basket {
+    float: left;
+    width: 20%;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+    color: #545252;
+}
+
+.basket p {
+    font-size: 13px;
+}
+
+.basket .button-pink, .basket .button-white {
+    padding: 7px 35px;
+}
+
+#curr-package {
+    font-size: 14px;
+    font-weight: 700;
+    color: #555151;
+}
+
+.price-label {
+    width: 33%;
+    display: inline-block;
+}
+
+#price {
+    display: inline-block;
+    width: 30%;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #e75152;
+}
+
+.chosen-services {
+    width: 70%;
+    margin-bottom: 20px;
+    border: 1px solid lightgrey;
+    float: left;
+    -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+}
+
+.chosen-services h3, .chosen-services p {
+    color: #545252;
+    text-align: center;
+}
+
+.chosen-services h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.chosen-services p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.shortHr {
+    width: 50%;
+    border: 1px solid lightgrey;
+}
+
+.service-card {
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 1);
+}
+
+.service-card:hover {
+    cursor: pointer;
+}
+
+.service-card:hover .img {
+    opacity: 1;
+}
+
+.service-card .img {
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+    border-radius: 3px 3px 0 0;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.service-card h1 {
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    word-break: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.service-card-desc {
+    color: #545252;
+    margin: 10px;
+}
+
+.service-card-desc p {
+    font-size: 13px;
+    text-align: left;
+    height: 50px;
+}
+
+.service-card hr {
+    width: 50%;
+    border: 1px solid lightgrey;
+    margin: 0 0 10px 0;
+}
+
+.service-card-desc a {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #e75152;
+}
+
+.service-card-desc a:hover {
+    background-color: rgba(238, 83, 84, 0.31);
+}
+
+/* -- Footer -- */
+footer {
+    float: left;
+    width: 100%;
+}
+
+/* --- Media Queries --- */
+@media (max-width: 1200px) {
+    #my-brochure {
+        left: 47%;
+    }
+
+    .s1 {
+        height: 179px;
+        width: 73px;
+    }
+
+    .s2 {
+        left: 42px;
+        top: -6px;
+        height: 189px;
+        width: 80px;
+    }
+
+    .s3 {
+        left: 92px;
+        top: -9px;
+        height: 194px;
+        width: 81px;
+    }
+
+    .s4 {
+        left: 124px;
+        top: -15px;
+        height: 205px;
+        width: 114px;
+    }
+
+    .s5 {
+        left: 198px;
+        top: -26px;
+        height: 226px;
+        width: 95px;
+    }
+
+    .s6 {
+        left: 254px;
+        top: -34px;
+        height: 243px;
+        width: 100px;
+    }
+
+    .s7 {
+        left: 319px;
+        top: -45px;
+        height: 264px;
+        width: 118px;
+    }
+
+    .s8 {
+        left: 418px;
+        top: -54px;
+        height: 282px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #my-brochure {
+        left: 41%;
+    }
+
+    .brochure-container {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 982px) {
+    #my-brochure {
+        left: 38%;
+    }
+}
+
+@media (max-width: 925px) {
+    .service-container {
+        width: 100%;
+    }
+
+    .brochure-container {
+        height: calc(100vh - 64px);
+        margin-left: 7%;
+    }
+
+    #my-brochure {
+        position: relative;
+        top: 52px;
+        left: 0;
+        right: 0;
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (max-width: 843px) {
+    .service-card {
+        width: 45.5%;
+    }
+
+    .brochure-container {
+        margin-left: 7%;
+    }
+}
+
+@media (max-width: 816px) {
+    .printable-container {
+        width: 53%;
+        margin: auto;
+    }
+
+    .basket {
+        float: none;
+        width: 160px;
+        margin: auto;
+    }
+
+    .chosen-services {
+        margin: 2.5%;
+        width: 95%;
+    }
+}
+
+@media (max-width: 670px) {
+    .printable-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 530px) {
+
+}
+
+@media (max-width: 421px) {
+    .printable-container {
+        width: 85%;
+    }
+
+    .grey-heading {
+        text-align: center;
+        margin-top: 145px;
+    }
+
+    .check-point {
+        margin-left: 20%;
+    }
+
+    .buttons.left {
+        justify-content: center;
+    }
+
+    .arrow-container {
+        font-size: 40px;
+    }
+
+    .chosen-services {
+        margin: 5%;
+        width: 85%;
+        padding: 10px;
+    }
+
+    .service-card {
+        width: 65%;
+        margin-left: 17.5%;
+    }
+}

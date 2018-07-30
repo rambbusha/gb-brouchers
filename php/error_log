@@ -1,0 +1,77 @@
+[16-May-2018 21:56:23 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 21:56:23 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 21:56:23 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:23 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:23 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 21:56:23 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:23 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:29 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 21:56:29 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 21:56:29 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:29 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:29 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 21:56:29 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:29 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:32 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 21:56:32 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 21:56:32 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:32 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:32 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 21:56:32 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:32 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:40 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 21:56:40 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 21:56:40 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:40 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:40 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 21:56:40 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:40 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:42 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 21:56:42 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 21:56:42 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:42 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:42 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 21:56:42 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:42 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:45 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 21:56:45 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 21:56:45 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:45 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:56:45 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 21:56:45 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:56:45 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:58:51 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 21:58:51 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 21:58:51 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:58:51 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 21:58:51 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 21:58:51 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 21:58:51 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 22:05:26 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 22:05:26 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 22:05:26 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 22:05:26 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 22:05:26 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 22:05:26 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 22:05:26 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 22:09:55 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 22:09:55 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 22:09:55 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 22:09:55 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 22:09:55 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 22:09:55 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 22:09:55 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 22:10:59 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 22:10:59 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 22:10:59 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 22:10:59 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 22:10:59 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 22:10:59 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 22:10:59 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 22:14:06 Europe/Berlin] PHP Warning:  mysql_connect(): Connection refused in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 13
+[16-May-2018 22:14:06 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 14
+[16-May-2018 22:14:06 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 22:14:06 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 21
+[16-May-2018 22:14:06 Europe/Berlin] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 23
+[16-May-2018 22:14:06 Europe/Berlin] PHP Warning:  mysql_query(): No such file or directory in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31
+[16-May-2018 22:14:06 Europe/Berlin] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/chat_login.php on line 31

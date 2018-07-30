@@ -1,0 +1,50 @@
+[12-Apr-2018 03:14:01 Europe/Berlin] PHP Parse error:  syntax error, unexpected ':', expecting ']' in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/data.php on line 223
+[20-Apr-2018 19:15:42 Europe/Berlin] PHP Parse error:  syntax error, unexpected ''\')"></div>' (T_ENCAPSED_AND_WHITESPACE) in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 285
+[01-Jun-2018 15:40:31 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 669
+[01-Jun-2018 15:40:31 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 669
+[01-Jun-2018 15:40:31 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 669
+[01-Jun-2018 15:40:31 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 669
+[01-Jun-2018 15:40:31 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 669
+[01-Jun-2018 15:40:31 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 669
+[01-Jun-2018 15:40:46 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 668
+[01-Jun-2018 15:40:46 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 668
+[01-Jun-2018 15:40:46 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 668
+[01-Jun-2018 15:40:46 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 668
+[01-Jun-2018 15:40:46 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 668
+[01-Jun-2018 15:40:46 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 668
+[01-Jun-2018 15:40:59 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:40:59 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:40:59 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:40:59 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:40:59 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:40:59 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:15 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:15 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:15 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:15 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:15 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:15 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:37 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:37 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:37 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:37 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:37 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:37 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:52 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:52 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:52 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:52 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:52 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:44:52 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:16 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:16 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:16 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:16 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:16 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:16 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:23 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:23 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:23 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:23 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:23 Europe/Berlin] PHP Warning:  array_map(): Argument #2 should be an array in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667
+[01-Jun-2018 15:50:23 Europe/Berlin] PHP Warning:  join(): Invalid arguments passed in /home/bfsktnrn/staging1.globuzzer.com/gb-brochures/php/page_package.php on line 667

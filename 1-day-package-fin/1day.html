@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Globuzzer - 6-hours</title>
+
+    <!------ STYLESHEETS ------->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+    <!-- Simple grid -->
+    <link rel="stylesheet" href="../css/simple-grid.css">
+    <!-- jQuery -->
+    <link rel="stylesheet" href="../css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <!-- Own stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!------ SCRIPTS ------->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <!-- TurnJS -->
+    <script src="../turnJS/turn.min.js"></script>
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+<body>
+<header>
+    <div>
+        <div class="menu">
+            <div class="logo"><a href="../index.html"><img src="../img/globuzzerLogo.png" alt="gb-logo"></a></div>
+            <div id="mobilemenu" class="show-mobile"><span class="fa fa-bars"></span></div>
+            <ul id="mainmenu" class="nav-bar">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="../my-package/my-package.php"><i class="fas fa-shopping-cart"></i> My package</a><span id="num-packages">5</span></li>
+            </ul>
+        </div>
+        <div class="img-header package-view finland-header">
+            <div class="intro">
+                <p class="curr-package"><span>01</span> day package</p>
+                <h2>Discover Finland<br>
+                    in 1 day
+                </h2>
+            </div>
+            <div class="arrow-container">
+                <p><i class="fas fa-chevron-circle-down"></i></p>
+            </div>
+        </div>
+        <div class="white-box"></div>
+    </div>
+</header>
+
+<!-- Dialog for successfully added service -->
+<div id="service-added">
+    Service added successfully!
+</div>
+
+<!-- Alert dialog for existing service -->
+<div id="service-exists">
+    You have already chosen this service!
+</div>
+
+<div class="brochure-viewer" id="brochure-viewer">
+    <div class="extend-resize">
+        <img src="../img/resize.png" alt="" class="resize">
+        <a href="#" class="jump-to-service">
+            <img src="../img/extend.png" alt="" class="extend">
+        </a><!-- this should be called jumping down -->
+    </div>
+    <div class="container brochure-container">
+        <div class="row introduction">
+            <div class='col-6 welcome-text'>
+                <div>
+                    <h1>Welcome!</h1>
+                    <p>Are you interested in discovering Finland?</p>
+                    <p>Just open the brochure, take a look at our</p>
+                    <p>services and choose the ones you like.</p>
+                </div>
+            </div>
+
+            <div class="arrow">
+                <img class='normalArrow' src="../img/secondPage-arrow.png" alt="arrow">
+            </div>
+            <div class="arrow">
+                <img class='mobileArrow' src="../img/mobile-secondPage-arrow.png" alt="arrow">
+            </div>
+
+            <div class='col-6 brochure-col'>
+                <!-- INTERACTIVE BROCHURE -->
+                <div class="row" id='slideshow'>
+                    <!-- Book Cover -->
+                    <div id="brochure-cover"
+                         style="background-image:url('../img/finland/BROCHURE cover 1 day.jpg')"></div>
+                    <!-- Page 1 -->
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Transportation-joakim-honkasalo-440124-unsplash%20L.jpg" class="img-responsive img-even">
+                        <div class="nameTag">
+                            TRANSPORTATION
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+                        </div>
+                        <!-- Detail View -->
+                        <div class="detailTour">
+                            <div>
+                                <h1>TRANSPORTATION</h1>
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+                                <p>Getting around Helsinki and the Capital region is quite easy. Downtown you can do everything by
+                                    foot as the center is not that big. However, if you want to venture outside the city center or want to
+                                    save time public transport is the fastest, cheapest and easiest way to get around. With a HSL day
+                                    ticket you have 24 hours unlimited access to the trams, busses and trains in the Helsinki.
+                                    Other ways of transportation can be by taxi or car, with cars we can provide you with a rental car
+                                    for yourself or we can provide a chauffeur make it a bit easier for you.</p>
+                                <a href="https://globuzzer.mn.co/posts/1214179" class="button-pink">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Transportation-joakim-honkasalo-440124-unsplash%20R.jpg" class="img-responsive img-odd">
+                    </div>
+                    <!-- Page 2 -->
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/viktor-kern-65943-unsplash%20L.jpg" class="img-responsive img-even">
+                        <div class="nameTag">
+                            PRIVATE WALKING/<br>
+                            BICYCLE TOUR
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+                        </div>
+                        <div class="detailTour">
+                            <div>
+                                <h1>PRIVATE WALKING/<br>
+                                    BICYCLE TOUR</h1>
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+                                <p>There are many sights to see and discover in Helsinki. The best way to see as much as possible is
+                                    with a private guided tour. This way it will not be a standard overcrowded boring experience but a
+                                    nice trip through the city, where you will discover everything about local history and more. This tour
+                                    will show you sights that you cannot miss in Helsinki including the Senate Square, Helsinki
+                                    Cathedral, Sibelius monument, National Museum of Helsinki, a tour of President's castle, University
+                                    library.</p>
+                                <a href="https://globuzzer.mn.co/posts/1215068" class="button-pink">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/viktor-kern-65943-unsplash%20R.jpg" class="img-responsive img-odd">
+                    </div>
+                    <!-- Page 3 -->
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Museum-joshua-earle-233782-unsplash%20L.jpg" class="img-responsive img-even">
+                        <div class="nameTag">
+                            MUSEUMS
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+                        </div>
+                        <div class="detailTour">
+                            <div>
+                                <h1>MUSEUMS</h1>
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+                                <p>Helsinki has many museums, but we choose the most impressive one’s for you to make
+                                    the choice a bit easier.
+                                    The first one is Kiasma, located downtown Helsinki is one of the leading contemporary art museums
+                                    in all of the Nordics.
+                                    Secondly Ateneum is considered to be the home of Finnish art, so to truly get a taste of the Finnish
+                                    art scene this is a wonderful place to see.
+                                    To find out more about these museums and other beautiful ones in Helsinki click on read more.</p>
+                                <a href="https://globuzzer.mn.co/posts/modern-art-museums-in-helsinki" class="button-pink">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Museum-joshua-earle-233782-unsplash%20R.jpg" class="img-responsive img-odd">
+                    </div>
+                    <!-- Page 4 -->
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Fortress-kevin-tadema-559770-unsplash%20L.jpg" class="img-responsive img-even">
+                        <div class="nameTag">
+                            SUOMENLINNA
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+                        </div>
+                        <div class="detailTour">
+                            <div>
+                                <h1>SUOMENLINNA</h1>
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+                                <p>A Unesco World Heritage Site, this is one of Finland’s most popular attractions. This fortress is a
+                                    great place to visit all year round but especially in spring and summer. With its restaurants,
+                                    museums and events Suomenlinna offers a great experience for everyone. Explore “The Fortress of
+                                    Finland” and travel through Finnish history.</p>
+                                <a href="https://globuzzer.mn.co/posts/must-see-attractions-in-helsinki" class="button-pink">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Fortress-kevin-tadema-559770-unsplash%20R.jpg" class="img-responsive img-odd">
+                    </div>
+                    <!-- Page 5 -->
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Zoo%20L.jpg" class="img-responsive img-even">
+                        <div class="nameTag">
+                            KORKEASAARI ZOO
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+                        </div>
+                        <div class="detailTour">
+                            <div>
+                                <h1>KORKEASAARI ZOO</h1>
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+                                <p>Founded in 1889, Korkeasaari Zoo is one of the oldest ones in the world. Located on its own small
+                                    island next to Helsinki, it is a beautiful place to visit. Every season brings you a different zoo as they
+                                    are open all year round, from a beautiful winter wonderland to a fresh new zoo with new life in
+                                    spring.</p>
+                                <a href="https://globuzzer.mn.co/posts/1358502" class="button-pink">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Zoo%20R.jpg" class="img-responsive img-odd">
+                    </div>
+                    <!-- Page 6 -->
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Cafe-patrick-tomasso-499112-unsplash%20L.jpg" class="img-responsive img-even">
+                        <div class="nameTag">
+                            COSY CAFÉS
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+                        </div>
+                        <div class="detailTour">
+                            <div>
+                                <h1>COSY CAFÉS</h1>
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+                                <p>Did you know that Finns are the largest coffee consumers in the world? Thanks to this there are lots
+                                    of cozy and nice cafés and coffee shops in around the city.
+                                    But the one standing out most is definitely Café Regatta, dating back to the 19th century it is one the
+                                    most charming cafés in Helsinki. This small red wooden cabin located next to the seaside it the
+                                    perfect place for a warm cup of coffee and some tasty traditional blueberry pie.</p>
+                                <a href="https://globuzzer.mn.co/posts/unique-cafes-in-helsinki" class="button-pink">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Cafe-patrick-tomasso-499112-unsplash%20R.jpg" class="img-responsive img-odd">
+                    </div>
+                    <!-- Page 7 -->
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Time%20to%20relax-mika-r-596825-unsplash%20L.jpg" class="img-responsive img-even">
+                        <div class="nameTag">
+                            TIME TO RELAX
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+                        </div>
+                        <div class="detailTour">
+                            <div>
+                                <h1>TIME TO RELAX</h1>
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+                                <p>Finns love sauna and jumping into a cold lake, river or the sea afterwards. But to make it a bit more
+                                    comfortable we advise going to one of Helsinki’s swimming pools. These are greatest places to relax
+                                    by taking a dive in one pools or by enjoying the warmth of a hot sauna.
+                                    Some of best pools are Allas Sea Pool a garden like oasis in the harbor of Helsinki and Yrjönkatu
+                                    Swimming Hall the oldest public pool of Helsinki that makes you feel like you stepped into a Wes
+                                    Anderson movie. Besides pools and saunas these places also have cafés, and more to make sure you
+                                    will leave them completely relax and fresh.</p>
+                                <a href="https://globuzzer.mn.co/posts/1233076" class="button-pink">Read
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Time%20to%20relax-mika-r-596825-unsplash%20R.jpg" class="img-responsive img-odd">
+                    </div>
+                    <!-- Page 8 -->
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Food-anise-aroma-art-277253%20L.jpg" class="img-responsive img-even">
+                        <div class="nameTag">
+                            HELSINKI'S CUISINE
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+                        </div>
+                        <div class="detailTour">
+                            <div>
+                                <h1>HELSINKI'S CUISINE</h1>
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+                                <p>From traditional Finnish or even Lappish cuisine to delicious modern fusion restaurants, Helsinki has
+                                    it all.
+
+                                    If you want to experience a typical Finnish dinner Ravintola (restaurant) Aino, this is one of the best
+                                    traditional serving restaurants in Helsinki. For the wild taste of Lapland Saaga is the place to visit,
+                                    their menu is inspired by Lappish nature and a this is great place to try reindeer.
+                                    Modern and fusion are also very popular in Helsinki, with most of them inspired or influenced by
+                                    the European and Asian kitchen. Some very good ones are Farang, Passio, Copas y Tapas and Nokka.</p>
+                                <a href="https://globuzzer.mn.co/posts/taste-finland-the-most-popular-finnish-foods" class="button-pink">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Food-anise-aroma-art-277253%20R.jpg" class="img-responsive img-odd">
+                    </div>
+                    <!-- Page 9 -->
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Nature-joakim-honkasalo-418781-unsplash%20L.jpg" class="img-responsive img-even">
+                        <div class="nameTag">
+                            NATURE
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+                        </div>
+                        <div class="detailTour">
+                            <div>
+                                <h1>NATURE</h1>
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+                                <p>Finland has a lot of beautiful lakes, forests, fjells and national parks. Nature is so vast in the country
+                                    that even in the capital area you can find the most amazing places to go hiking, cycling or do any
+                                    other outdoor activity. Near Helsinki you find Nuuksio a beautiful national park. Every season brings
+                                    you a different experience. Enjoy a day in the nature and treat yourself outdoors after an active day
+                                    with some sausages cooked over a fire in a typical Finnish “kota” (hut).</p>
+                                <a href="https://globuzzer.mn.co/posts/1281814" class="button-pink">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="white-overlay"></div>
+                        <img src="../img/finland/Nature-joakim-honkasalo-418781-unsplash%20R.jpg" class="img-responsive img-odd">
+                    </div>
+                    <!-- Page 10 - last page -->
+                    <div>
+                        <div class="black-overlay"></div>
+                        <img src="../img/finland/Nature-joakim-honkasalo-418781-unsplash%20L.jpg" class="img-responsive img-even">
+                    </div>
+                    <div>
+                        <div class="black-overlay"></div>
+                        <img src="../img/finland/Nature-joakim-honkasalo-418781-unsplash%20R.jpg" class="img-responsive img-odd">
+                    </div>
+                </div>
+            </div>
+            <!-- Last brochure page elements -->
+            <div class="lastBrochure">
+                <h2>Thank you for choosing our services!</h2>
+                <div>
+                    <a href="../my-package/my-package.php" class="button-pink">See My Package</a>
+                    <a href="#services-block" class="button-pink">All Services</a>
+                    <a href="#slideshow" class="button-pink go-back">Go Back</a>
+                </div>
+            </div>
+            <!-- Heart/Check buttons -->
+            <div class="heart-check">
+                <a class="heart-btn">
+                    <svg class="svg-inline--fa fa-heart fa-w-18 icon unHoverHeart" aria-hidden="true"
+                         data-prefix="far"
+                         data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                         data-fa-i2svg="">
+                        <path fill="currentColor"
+                              d="M257.3 475.4L92.5 313.6C85.4 307 24 248.1 24 174.8 24 84.1 80.8 24 176 24c41.4 0 80.6 22.8 112 49.8 31.3-27 70.6-49.8 112-49.8 91.7 0 152 56.5 152 150.8 0 52-31.8 103.5-68.1 138.7l-.4.4-164.8 161.5a43.7 43.7 0 0 1-61.4 0zM125.9 279.1L288 438.3l161.8-158.7c27.3-27 54.2-66.3 54.2-104.8C504 107.9 465.8 72 400 72c-47.2 0-92.8 49.3-112 68.4-17-17-64-68.4-112-68.4-65.9 0-104 35.9-104 102.8 0 37.3 26.7 78.9 53.9 104.3z"></path>
+                    </svg>
+                    <span>Cheer</span></a>
+                <a class="check-btn">
+                    <svg class="svg-inline--fa fa-check-circle fa-w-16 icon unHoverCheck" aria-hidden="true"
+                         data-prefix="far" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                              d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path>
+                    </svg>
+                    <span class="choose">Choose</span></a>             <!-- heart and check icons -->
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footnote">
+            <span class="nav-dot" id="page1"><i class="fas fa-circle dot0 dots"></i></span>
+            <span class="nav-dot" id="page2"><i class="fas fa-circle dot1 dots"></i></span>
+            <span class="nav-dot" id="page3"><i class="fas fa-circle dot2 dots"></i></span>
+            <span class="nav-dot" id="page4"><i class="fas fa-circle dot3 dots"></i></span>
+            <span class="nav-dot" id="page5"><i class="fas fa-circle dot4 bigCircle  dots"></i></span>
+            <span class="nav-dot" id="page6"><i class="fas fa-circle dot5 dots"></i></span>
+            <span class="nav-dot" id="page7"><i class="fas fa-circle dot6 dots"></i></span>
+            <span class="nav-dot" id="page8"><i class="fas fa-circle dot7 dots"></i></span>
+            <span class="nav-dot" id="page9"><i class="fas fa-circle dot8 dots"></i></span>
+            <span class="nav-dot" id="page10"><i class="fas fa-circle dot9 dots"></i></span> <!-- Circle -->
+        </div>
+
+        <div id="moving-down-icon">
+            <p>Or jump to see all the services</p>
+            <a href="#services-block">
+                <i class="fas fa-chevron-circle-down"></i>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!--div id='supplementalDiv'></div-->
+
+<!--div id='mobileButtons'>
+    <div id="filterButton">Filters</div>
+    <div id="featureButton">Featured</div>
+</div-->
+
+<div class="container" id='filterForm'>
+    <form id="filter" method="POST">
+        <select id="filter-services" name="filter">
+            <option value="filter" selected hidden disabled>Filters</option>
+            <option value="arts-museums">Arts & Museums</option>
+            <option value="city-tour">City Tour</option>
+            <option value="food-related">Food Related</option>
+            <option value="inside-programs">Inside Programs</option>
+            <option value="outside-programs">Outside Programs</option>
+            <option value="water-related">Water Related</option>
+            <option value="all">Show All</option>
+        </select>
+    </form>
+
+    <form id="featured" method="POST">
+        <select name="featured" class="pink-select">
+            <option value="featured" selected hidden disabled>Featured</option>
+            <option value="most-view">Most Viewed</option>
+            <option value="most-cheered">Most Cheered</option>
+            <option value="most-chosen">Most Chosen</option>
+            <option value="lowest-price">Lowest Price</option>
+            <option value="highest-price">Highest Price</option>
+        </select>
+    </form>
+</div>
+
+<div id='services-block' class="container">
+    <hr class="fine-hr">
+    <div class="row">
+        <div class="services">
+            <div id="service9" class="thumbnail-container col-3 service9 city-tour outside-programs">
+                <div class="hover-container">
+                    <div class="thumbnail" style="background-image:url(../img/finland/Transportation-joakim-honkasalo-440124-unsplash.jpg)"></div>
+                    <div class="color-overlay"></div>
+                    <div class="service-desc">
+                        <h3>Transportation</h3>
+                        <p>There are many ways to travel around Helsinki, the main options are public
+                            transport, taxi or by car.</p>
+                        <a href="https://globuzzer.mn.co/posts/1214179" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+                    </div>
+                </div>
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+            </div>
+            <div id="service10" class="thumbnail-container col-3 service10 outside-programs water-related">
+                <div class="hover-container">
+                    <div class="thumbnail" style="background-image:url(../img/finland/viktor-kern-65943-unsplash.jpg)"></div>
+                    <div class="color-overlay"></div>
+                    <div class="service-desc">
+                        <h3>Private walking/<br>
+                        Bicycle tour</h3>
+                        <p>A nice tour around the city discovering Helsinki’s history and most famous sights.</p>
+                        <a href="https://globuzzer.mn.co/posts/1215068" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+                    </div>
+                </div>
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+            </div>
+            <div id="service11" class="thumbnail-container col-3 service11 outside-programs water-related">
+                <div class="hover-container">
+                    <div class="thumbnail" style="background-image:url(../img/finland/Museum-joshua-earle-233782-unsplash.jpg)"></div>
+                    <div class="color-overlay"></div>
+                    <div class="service-desc">
+                        <h3>Museums</h3>
+                        <p>Perfect places to experience and enjoy art.</p>
+                        <a href="https://globuzzer.mn.co/posts/modern-art-museums-in-helsinki" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+                    </div>
+                </div>
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+            </div>
+            <div id="service12" class="thumbnail-container col-3 service12 arts-museums outside-programs">
+                <div class="hover-container">
+                    <div class="thumbnail" style="background-image:url(../img/finland/Fortress-kevin-tadema-559770-unsplash.jpg)"></div>
+                    <div class="color-overlay"></div>
+                    <div class="service-desc">
+                        <h3>Suomenlinna</h3>
+                        <p>Explore “The Fortress of Finland” and travel through some Finnish history.</p>
+                        <a href="https://globuzzer.mn.co/posts/must-see-attractions-in-helsinki" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+                    </div>
+                </div>
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+            </div>
+            <div id="service13" class="thumbnail-container col-3 service13 arts-museums inside-programs">
+                <div class="hover-container ">
+                    <div class="thumbnail" style="background-image:url(../img/finland/Zoo.jpg)"></div>
+                    <div class="color-overlay"></div>
+                    <div class="service-desc">
+                        <h3>Korkeasaari Zoo</h3>
+                        <p>Explore the Nordic wildlife at one of the oldests zoos in the world.</p>
+                        <a href="https://globuzzer.mn.co/posts/1358502" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+                    </div>
+                </div>
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+            </div>
+            <div id="service14" class="thumbnail-container col-3 service14 outside-programs">
+                <div class="hover-container">
+                    <div class="thumbnail" style="background-image:url(../img/finland/Cafe-patrick-tomasso-499112-unsplash.jpg)"></div>
+                    <div class="color-overlay"></div>
+                    <div class="service-desc">
+                        <h3>Cozy Cafés</h3>
+                        <p>Cafés in Helsinki to relax or recharge.</p>
+                        <a href="https://globuzzer.mn.co/posts/unique-cafes-in-helsinki" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+                    </div>
+                </div>
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+            </div>
+            <div id="service15" class="thumbnail-container col-3 service15 food-related inside-programs">
+                <div class="hover-container">
+                    <div class="thumbnail" style="background-image:url(../img/finland/Time%20to%20relax-mika-r-596825-unsplash.jpg)"></div>
+                    <div class="color-overlay"></div>
+                    <div class="service-desc">
+                        <h3>Time to Relax</h3>
+                        <p>Take a dive or enjoy the warmth of a Finnish sauna.</p>
+                        <a href="https://globuzzer.mn.co/posts/1233076" class="button-pink"><img
+                                src="../img/icon3_book.png" alt="book"> Read more</a>
+                    </div>
+                </div>
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+            </div>
+            <div id="service16" class="thumbnail-container col-3 service16 outside-programs">
+                <div class="hover-container">
+                    <div class="thumbnail" style="background-image:url(../img/finland/Food-anise-aroma-art-277253.jpg)"></div>
+                    <div class="color-overlay"></div>
+                    <div class="service-desc">
+                        <h3>Helsinki's Cuisine</h3>
+                        <p>Taste some great Finnish, Lappish or international food.</p>
+                        <a href="https://globuzzer.mn.co/posts/taste-finland-the-most-popular-finnish-foods" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+                    </div>
+                </div>
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+            </div>
+            <div id="service17" class="thumbnail-container col-3 service17 outside-programs">
+                <div class="hover-container">
+                    <div class="thumbnail" style="background-image:url(../img/finland/Nature-joakim-honkasalo-418781-unsplash.jpg)"></div>
+                    <div class="color-overlay"></div>
+                    <div class="service-desc">
+                        <h3>Nature</h3>
+                        <p>Enjoy the outdoors and discover the Finnish nature.</p>
+                        <a href="https://globuzzer.mn.co/posts/1281814" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+                    </div>
+                </div>
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="privacy-copyright">
+        <ul class="socialmedia">
+            <li><a href="https://www.globuzzer.com/"><img class="gb-icon" src="../img/GB%20icon.png" alt="gb-icon"></a>
+            </li>
+            <li><a href="https://www.facebook.com/Globuzzer/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/globuzzer"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.at/globuzzer/"><i class="fab fa-pinterest"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/globuzzer"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <ul class="nav-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <br>
+        <p class="copyright">&copy; Copyright statement</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="filter.js"></script>
+<script type="text/javascript" src="booklet.js"></script>
+<script>
+    $(document).ready(function () {
+
+    });
+</script>
+
+</body>

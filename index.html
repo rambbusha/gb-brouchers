@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+
+    <title>Globuzzer</title>
+
+
+
+    <!------ STYLESHEETS ------->
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900|Source+Sans+Pro" rel="stylesheet">
+
+    <!-- Simple grid -->
+
+    <link rel="stylesheet" href="css/simple-grid.css">
+
+    <!-- jQuery -->
+
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+    <!-- Own stylesheet -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!------ SCRIPTS ------->
+
+    <!-- jQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="js/jquery-ui.js"></script>
+
+    <!-- Font Awesome -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="menu">
+
+        <div class="logo"><a href="index.html"><img src="img/globuzzerLogo.png" alt="gb-logo"></a></div>
+
+        <div id="mobilemenu" class="show-mobile"><span class="fa fa-bars"></span></div>
+
+        <ul id="mainmenu" class="nav-bar">
+
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+
+            <li><a href="my-package/my-package.php"><i class="fas fa-shopping-cart"></i> My package</a><span id="num-packages">5</span></li>
+
+        </ul>
+
+    </div>
+
+    <div class="img-header">
+
+        <div class="intro">
+
+            <h2>Discover Sweden</h2>
+
+            <p>Explore it like a local</p>
+
+        </div>
+
+
+
+        <form id="city" method="POST">
+
+            <select name="city" id="city-select" class="pink-select">
+
+                <option value="stockholm">Sweden</option>
+
+                <option value="oslo">Norway</option>
+
+                <option value="copenhagen">Denmark</option>
+
+                <option value="helsinki">Finland</option>
+
+            </select>
+
+        </form>
+
+    </div>
+
+</header>
+
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-12 quote">
+
+            <hr class="shortPinkHr">
+
+            <p>Discover Stockholm like a local, Globuzzer offers you tailored travel packages
+		that will ensure the best experience in a short time.<br> Most trips are organized purely from a
+		touristic point of view, but ours are designed by locals to get you an authentic<br> Swedish
+		experience. Discover the most amazing places Stockholm has to offer with us.</p>
+
+            <hr class="shortPinkHr">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-12">
+
+            <h2 class="section-heading"><span>Our</span> Packages</h2>
+
+            <hr class="pinkHr">
+
+        </div>
+
+    </div>
+
+    <!--Sweden packages -->
+
+    <div class="row packages sweden">
+
+        <div class="greybox"></div>
+
+        <div class="col-4 package-col">
+
+            <div class="package">
+
+                <h2 class="section-heading"><span>6 Hours</span><br>Package</h2>
+
+                <img class="brochure-img" src="img/6-hours-brochure.png" alt="6-hours-brochure">
+
+                <p class="package-desc">This package gives you the freedom to choose your favorite activities and more to make your
+				stay in Stockholm the best experience. It includes transportation, exploring the city, food
+				tours, museums and much more. Discover the best of Stockholm in only 6 hours.</p>
+
+                <p class="price">from <span>629SEK</span></p>
+
+                <div class="buttons">
+
+                    <a href="6-hours-package/6hours.html" class="button-pink">Choose</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-4 package-col">
+
+            <div class="package">
+
+                <h2 class="section-heading"><span>1 Day</span><br>Package</h2>
+
+                <img class="brochure-img" src="img/1-day-brochure.png" alt="1-day-brochure">
+
+                <p class="package-desc">This package gives you the freedom to choose your favorite activities and more to make your
+				stay in Stockholm the best experience. It includes transportation, exploring the city, food
+				tours, museums and much more. Discover Stockholm from a local’s perspective in just one
+				day.</p>
+
+                <p class="price">from <span>926SEK</span></p>
+
+                <div class="buttons">
+
+                    <a href="1-day-package/1day.html" class="button-pink">Choose</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-4 package-col">
+
+            <div class="package">
+
+                <h2 class="section-heading"><span>2 Days</span><br>Package</h2>
+
+                <img class="brochure-img" src="img/2-days-brochure.png" alt="2-days-brochure">
+
+                <p class="package-desc">This package gives you the freedom to choose your favorite activities and more to make your
+				stay in Stockholm the best experience. It includes transportation, exploring the city, food
+				tours, museums and much more. Want to also see more of Sweden than just Stockholm, this
+				2-days package allows you to also explore the beautiful Archipelago. Discover Stockholm and
+				much more and feel like a true local during your 2-day stay.</p>
+
+                <p class="price">from <span>1235SEK</span></p>
+
+                <div class="buttons">
+
+                    <a href="2-days-package/2days.html" class="button-pink">Choose</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Packages Finland -->
+
+    <div class="row packages finland">
+
+        <div class="greybox"></div>
+
+        <div class="col-4 package-col">
+
+            <div class="package">
+
+                <h2 class="section-heading"><span>6 Hours</span><br>Package</h2>
+
+                <img class="brochure-img" src="img/6-hours-brochure.png" alt="6-hours-brochure">
+
+                <p class="package-desc">Catch a glimpse of magical Helsinki, Finland's capital city, and introduce yourself to a cultural experience of your choice. Starting at just 61&euro; create your own mini retreat including transportation, meals and an exploration into the architectural history, cultural or natural wonders to enhance your visit in just 6 hours.</p>
+
+                <p class="price">starts from <span>61€</span></p>
+
+                <div class="buttons">
+
+                    <a href="6-hours-package-fin/6hours.html" class="button-pink">Choose</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-4 package-col">
+
+            <div class="package">
+
+                <h2 class="section-heading"><span>1 Day</span><br>Package</h2>
+
+                <img class="brochure-img" src="img/1-day-brochure.png" alt="1-day-brochure">
+
+                <p class="package-desc">Enjoy a truly Finnish sojourn, where you will be delighted by a medley of cultural and culinary treats. Select from your choice of adventures with this package, starting at 90 euros.  Transportation, meals and activities to be included.  Join us for one full day of indulging in all that the capital city of Helsinki has to offer. </p>
+
+                <p class="price">starts from <span>90€</span></p>
+
+                <div class="buttons">
+
+                    <a href="1-day-package-fin/1day.html" class="button-pink">Choose</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-4 package-col">
+
+            <div class="package">
+
+                <h2 class="section-heading"><span>2 Days</span><br>Package</h2>
+
+                <img class="brochure-img" src="img/2-days-brochure.png" alt="2-days-brochure">
+
+                <p class="package-desc">Stay a while and immerse yourself in the capital city of Finland. Let us take you by the hand with a personalized 2 day package. Starting at just 120 euros, you will be enchanted with guided tours through the hidden treasures of the city. Included as well are transportation and meals which highlight Helsinki's history and culture.</p>
+
+                <p class="price">from <span>120€</span></p>
+
+                <div class="buttons">
+
+                    <a href="2-days-package-fin/2days.html" class="button-pink">Choose</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-12">
+
+            <h2 class="section-heading"><span>Want to </span>know more?</h2>
+
+            <hr class="pinkHr">
+
+            <div class="small-wrapper">
+
+                <div class="youtube-wrapper sweden">
+
+                    <iframe align="middle" width="560" height="315" src="https://www.youtube.com/embed/K3vOSmkhCOM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+
+                <div class="youtube-wrapper finland">
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yawXq5TlgBU?controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<footer>
+
+    <div class="row contact">
+
+        <div class="col-3">
+
+            <h2 class="section-heading"><span>Contact </span>us</h2>
+
+        </div>
+
+        <div class="col-3">
+
+            <div class="address"><i class="fas fa-map-marker"></i> Lindstedtsvägen 24, 4thFloor,<br><span>11428 Stockholm, Sweden</span></div>
+
+        </div>
+
+        <div class="col-3">
+
+            <div class="mail-phone">
+
+                <i class="fas fa-envelope"></i> rami@globuzzer.com <br>
+
+                <i class="fas fa-phone"></i> +46 73 555 5 134
+
+            </div>
+
+        </div>
+
+        <div class="col-3">
+
+            <div class="contact-btn">
+
+                <a class="button-pink-dark">Drop us a line</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="privacy-copyright">
+
+        <ul class="socialmedia">
+
+            <li><a href="https://www.globuzzer.com/"><img class="gb-icon" src="img/GB%20icon.png" alt="gb-icon"></a></li>
+
+            <li><a href="https://www.facebook.com/Globuzzer/"><i class="fab fa-facebook-f"></i></a></li>
+
+            <li><a href="https://twitter.com/globuzzer"><i class="fab fa-twitter"></i></a></li>
+
+            <li><a href="https://www.pinterest.at/globuzzer/"><i class="fab fa-pinterest"></i></a></li>
+
+            <li><a href="https://www.linkedin.com/company/globuzzer"><i class="fab fa-linkedin-in"></i></a></li>
+
+        </ul>
+
+        <ul class="nav-bar">
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Privacy</a></li>
+
+            <li><a href="#">Terms & Conditions</a></li>
+
+            <li><a href="#">Contact us</a></li>
+
+        </ul>
+
+        <br>
+
+        <p class="copyright">&copy; Copyright statement</p>
+
+    </div>
+
+</footer>
+
+
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

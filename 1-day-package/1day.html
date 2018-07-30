@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+
+    <title>Globuzzer - 1-day</title>
+
+
+
+    <!------ STYLESHEETS ------->
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900|Source+Sans+Pro" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+
+    <!-- Simple grid -->
+
+    <link rel="stylesheet" href="../css/simple-grid.css">
+
+    <!-- jQuery -->
+
+    <link rel="stylesheet" href="../css/jquery-ui.theme.min.css">
+
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+
+    <!-- Own stylesheet -->
+
+    <link rel="stylesheet" href="../css/style.css">
+
+
+
+    <!------ SCRIPTS ------->
+
+    <!-- jQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="../js/jquery-ui.js"></script>
+
+    <!-- TurnJS -->
+
+    <script src="../turnJS/turn.min.js"></script>
+
+    <!-- Font Awesome -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+
+</head>
+
+<body>
+
+<header>
+
+    <div>
+
+        <div class="menu">
+
+            <div class="logo"><a href="../index.html"><img src="../img/globuzzerLogo.png" alt="gb-logo"></a></div>
+
+            <div id="mobilemenu" class="show-mobile"><span class="fa fa-bars"></span></div>
+
+            <ul id="mainmenu" class="nav-bar">
+
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+
+                <li><a href="../my-package/my-package.php"><i class="fas fa-shopping-cart"></i> My package</a><span id="num-packages">5</span></li>
+
+            </ul>
+
+        </div>
+
+        <div class="img-header package-view">
+
+            <div class="intro">
+
+                <p class="curr-package"><span>01</span> day package</p>
+
+                <h2>Discover Sweden<br>
+
+                    in 1 Day
+
+                </h2>
+
+            </div>
+
+            <div class="arrow-container">
+
+                <p><i class="fas fa-chevron-circle-down"></i></p>
+
+            </div>
+
+        </div>
+
+        <div class="white-box"></div>
+
+    </div>
+
+</header>
+
+
+
+<!-- Dialog for successfully added service -->
+
+<div id="service-added">
+
+    Service added successfully!
+
+</div>
+
+
+
+<!-- Alert dialog for existing service -->
+
+<div id="service-exists">
+
+    You have already chosen this service!
+
+</div>
+
+
+
+<div class="brochure-viewer" id="brochure-viewer">
+
+    <div class="extend-resize">
+
+        <img src="../img/resize.png" alt="" class="resize">
+
+        <a href="#" class="jump-to-service">
+
+            <img src="../img/extend.png" alt="" class="extend">
+
+        </a><!-- this should be called jumping down -->
+
+    </div>
+
+    <div class="container brochure-container">
+
+        <div class="row introduction">
+
+            <div class='col-6 welcome-text'>
+
+                <div>
+
+                    <h1>Welcome!</h1>
+
+                    <p>Are you interested in discovering Sweden?</p>
+
+                    <p>Just open the brochure, take a look at our</p>
+
+                    <p>services and choose the ones you like.</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="arrow">
+
+                <img class='normalArrow' src="../img/secondPage-arrow.png" alt="arrow">
+
+            </div>
+
+            <div class="arrow">
+
+                <img class='mobileArrow' src="../img/mobile-secondPage-arrow.png" alt="arrow">
+
+            </div>
+
+
+
+            <div class='col-6 brochure-col'>
+
+                <!-- INTERACTIVE BROCHURE -->
+
+                <div class="row" id='slideshow'>
+
+                    <!-- Book Cover -->
+
+                    <div id="brochure-cover" class="hard"
+
+                         style="background-image:url('../img/sweden/1-day-brochure-cover.jpg')"></div>
+
+                    <!-- Page 1 -->
+
+                    <div class="hard">
+
+                        <div class="white-overlay"></div>
+
+                        <img src="../img/sweden/transportation-L.jpg" class="img-responsive img-even">
+
+                        <div class="nameTag">
+
+                            TRANSPORTATION
+
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+
+                        </div>
+
+                        <!-- Detail View -->
+
+                        <div class="detailTour">
+
+                            <div>
+
+                                <h1>TRANSPORTATION</h1>
+
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+
+                                <p>Getting around Stockholm is quite easy. The famous Gamla Stan (old town) could be discovered on
+					foot as it is small enough. However, if you want to venture in and around the city center for varied
+					and richer experiences and at the same time to save time public transport is the fastest, cheapest and
+					easiest mode of transportation. With an SL day-card you can have 24 hours unlimited access to trams,
+					buses and trains all over Stockholm.<br>
+					You can also get around by taxis and cars. We have options to provide you with rental car and even a
+					chauffeur for your comfort and convenience.</p>
+
+                                <a href="https://globuzzer.mn.co/posts/public-transportation-in-stockholm-sl" class="button-pink">Read more</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div class="white-overlay"></div>
+
+                        <img src="../img/sweden/transportation-R.jpg" class="img-responsive img-odd">
+
+                    </div>
+
+                    <!-- Page 2 -->
+
+                    <div>
+
+                        <div class="white-overlay"></div>
+
+                        <img src="../img/sweden/guided-tours-L.jpg" class="img-responsive img-even">
+
+                        <div class="nameTag">
+
+                            GUIDED TOURS
+
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+
+                        </div>
+
+                        <div class="detailTour">
+
+                            <div>
+
+                                <h1>GUIDED TOURS</h1>
+
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+
+                                <p>There are many sights to cherish and discover Stockholm. You can have an enriching experience with
+					a private guided tour either on foot or with bikes. This way it will not be a commercial, overcrowding
+					and boring experience but a personalized nice tour through the city, where you will discover local
+					history, culture and unmissable sights through local perspectives.</p>
+
+                                <a href="https://globuzzer.mn.co/posts/h-in-stockholm-day-1-a-walk-in-the-old-city" class="button-pink">Read more</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div class="white-overlay"></div>
+
+                        <img src="../img/sweden/guided-tours-R.jpg" class="img-responsive img-odd">
+
+                    </div>
+
+                    <!-- Page 3 -->
+
+                    <div>
+
+                        <div class="white-overlay"></div>
+
+                        <img src="../img/sweden/museums-L.jpg" class="img-responsive img-even">
+
+                        <div class="nameTag">
+
+                            MUSEUMS
+
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+
+                        </div>
+
+                        <div class="detailTour">
+
+                            <div>
+
+                                <h1>MUSEUMS</h1>
+
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+
+                                <p>Stockholm has many historical and modern museums, but we offer the best and impressive selections
+					for you to have a lasting museum experience, the Nordic Museum and the ABBA Museum.
+					The first one is the Nordic Museum, based in central Stockholm, dedicated to the cultural history and
+					ethnography of Sweden from the early modern to the contemporary period.<br>
+					Secondly, the ABBA Museum is a Swedish interactive exhibition about the famous pop band ABBA
+					which showcases the band's collected works in a contemporary, interactive setting.</p>
+
+                                <a href="https://globuzzer.mn.co/posts/best-visiting-museums-in-stockholm-prices-locations" class="button-pink">Read more</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div class="white-overlay"></div>
+
+                        <img src="../img/sweden/museums-R.jpg" class="img-responsive img-odd">
+
+                    </div>
+
+                    <!-- Page 4 -->
+
+                    <div>
+
+                        <div class="white-overlay"></div>
+
+                        <img src="../img/sweden/skansen-L.jpg" class="img-responsive img-even">
+
+                        <div class="nameTag">
+
+                            SKANSEN
+
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+
+                        </div>
+
+                        <div class="detailTour">
+
+                            <div>
+
+                                <h1>SKANSEN</h1>
+
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+
+                                <p>Skansen, opened in 1891, is the first open-air museum and zoo in Sweden which shows the way of life
+					in the different parts of Sweden before the industrial era. The exhibits include a full replica of a 19th
+					century town and the open-air zoo contains a wide range of wild Scandinavian animals as well as
+					some rare breeds of farm animals.</p>
+
+                                <a href="https://globuzzer.mn.co/posts/top-10-stockholm-spring-activities" class="button-pink">Read more</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div class="white-overlay"></div>
+
+                        <img src="../img/sweden/skansen-R.jpg" class="img-responsive img-odd">
+
+                    </div>
+
+                    <!-- Page 5 -->
+
+                    <div>
+
+                        <div class="white-overlay"></div>
+
+                        <img src="../img/sweden/food-trip-L.jpg" class="img-responsive img-even">
+
+                        <div class="nameTag">
+
+                            FOOD TRIP
+
+                            <span class="show-more"><i class="fas fa-angle-double-right"></i></span>
+
+                        </div>
+
+                        <div class="detailTour">
+
+                            <div>
+
+                                <h1>FOOD TRIP</h1>
+
+                                <span class="close-btn"><i class="fas fa-times"></i></span>
+
+                                <p>Uncover a world of authentic, mouth-watering food tours designed to suit any budget, appetite and
+					time frame. By pairing the classic Scandinavian life style with a special food focus, our itineraries aim
+					to really get you under the skin of the world's most exciting food cultures.<br>
+					These are real-world experiences with a foodie twist: one-part culture, one-part adventure and three
+					parts delicious. From bite-sized trips to gastronomic odysseys, we'll get you munching, crunching,
+					sipping and slurping just like the locals.</p>
+
+                                <a href="https://globuzzer.mn.co/posts/unique-cafes-in-stockholm-from-a-locals-perspective" class="button-pink">Read more</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div class="white-overlay"></div>
+
+                        <img src="../img/sweden/food-trip-R.jpg" class="img-responsive img-odd">
+
+                    </div>
+
+                    <!-- Page 6 - last page -->
+
+                    <div>
+
+                        <div class="black-overlay"></div>
+
+                        <img src="../img/sweden/food-trip-L.jpg" class="img-responsive img-even">
+
+                    </div>
+
+                    <div>
+
+                        <div class="black-overlay"></div>
+
+                        <img src="../img/sweden/food-trip-R.jpg" class="img-responsive img-odd">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Last brochure page elements -->
+
+            <div class="lastBrochure">
+
+                <h2>Thank you for choosing our services!</h2>
+
+                <div>
+
+                    <a href="../my-package/my-package.php" class="button-pink">See My Package</a>
+
+                    <a href="#services-block" class="button-pink">All Services</a>
+
+                    <a href="#slideshow" class="button-pink go-back">Go Back</a>
+
+                </div>
+
+            </div>
+
+            <!-- Heart/Check buttons -->
+
+            <div class="heart-check">
+
+                <a class="heart-btn">
+
+                    <svg class="svg-inline--fa fa-heart fa-w-18 icon unHoverHeart" aria-hidden="true"
+
+                         data-prefix="far"
+
+                         data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+
+                         data-fa-i2svg="">
+
+                        <path fill="currentColor"
+
+                              d="M257.3 475.4L92.5 313.6C85.4 307 24 248.1 24 174.8 24 84.1 80.8 24 176 24c41.4 0 80.6 22.8 112 49.8 31.3-27 70.6-49.8 112-49.8 91.7 0 152 56.5 152 150.8 0 52-31.8 103.5-68.1 138.7l-.4.4-164.8 161.5a43.7 43.7 0 0 1-61.4 0zM125.9 279.1L288 438.3l161.8-158.7c27.3-27 54.2-66.3 54.2-104.8C504 107.9 465.8 72 400 72c-47.2 0-92.8 49.3-112 68.4-17-17-64-68.4-112-68.4-65.9 0-104 35.9-104 102.8 0 37.3 26.7 78.9 53.9 104.3z"></path>
+
+                    </svg>
+
+                    <span>Cheer</span></a>
+
+                <a class="check-btn">
+
+                    <svg class="svg-inline--fa fa-check-circle fa-w-16 icon unHoverCheck" aria-hidden="true"
+
+                         data-prefix="far" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg"
+
+                         viewBox="0 0 512 512" data-fa-i2svg="">
+
+                        <path fill="currentColor"
+
+                              d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path>
+
+                    </svg>
+
+                    <span class="choose">Choose</span></a>             <!-- heart and check icons -->
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Navigation -->
+
+        <div class="footnote">
+
+            <span class="nav-dot" id="page1"><i class="fas fa-circle dot0 dots"></i></span>
+
+            <span class="nav-dot" id="page2"><i class="fas fa-circle dot1 dots"></i></span>
+
+            <span class="nav-dot" id="page3"><i class="fas fa-circle dot2 dots"></i></span>
+
+            <span class="nav-dot" id="page4"><i class="fas fa-circle dot3 dots"></i></span>
+
+            <span class="nav-dot" id="page5"><i class="fas fa-circle dot4 dots"></i></span>
+
+            <span class="nav-dot" id="page6"><i class="fas fa-circle dot5 dots"></i></span> <!-- Circle -->
+
+        </div>
+
+
+
+        <div id="moving-down-icon">
+
+            <p>Or jump to see all the services</p>
+
+            <a href="#services-block">
+
+                <i class="fas fa-chevron-circle-down"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<!--div id='supplementalDiv'></div-->
+
+
+
+<!--div id='mobileButtons'>
+
+    <div id="filterButton">Filters</div>
+
+    <div id="featureButton">Featured</div>
+
+</div-->
+
+
+
+<div class="container" id='filterForm'>
+
+    <form id="filter" method="POST">
+
+        <select id="filter-services" name="filter">
+
+            <option value="filter" selected hidden disabled>Filters</option>
+
+            <option value="arts-museums">Arts & Museums</option>
+
+            <option value="city-tour">City Tour</option>
+
+            <option value="food-related">Food Related</option>
+
+            <option value="inside-programs">Inside Programs</option>
+
+            <option value="outside-programs">Outside Programs</option>
+
+            <option value="water-related">Water Related</option>
+
+            <option value="all">Show All</option>
+
+        </select>
+
+    </form>
+
+
+
+    <form id="featured" method="POST">
+
+        <select name="featured" class="pink-select">
+
+            <option value="featured" selected hidden disabled>Featured</option>
+
+            <option value="most-view">Most Viewed</option>
+
+            <option value="most-cheered">Most Cheered</option>
+
+            <option value="most-chosen">Most Chosen</option>
+
+            <option value="lowest-price">Lowest Price</option>
+
+            <option value="highest-price">Highest Price</option>
+
+        </select>
+
+    </form>
+
+</div>
+
+
+
+<div id='services-block' class="container">
+
+    <hr class="fine-hr">
+
+    <div class="row">
+
+        <div class="services">
+
+            <div id="service1" class="thumbnail-container col-3 service1 city-tour outside-programs">
+
+                <div class="hover-container">
+
+                    <div class="thumbnail" style="background-image:url(../img/sweden/service1.jpg)"></div>
+
+                    <div class="color-overlay"></div>
+
+                    <div class="service-desc">
+
+                        <h3>Transportation</h3>
+
+                        <p>There are multiple modes of transportation for sightseeing around Stockholm, the most
+				convenient options are public transports, taxis and by cars.</p>
+
+                        <a href="https://globuzzer.mn.co/posts/public-transportation-in-stockholm-sl" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+
+                    </div>
+
+                </div>
+
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+
+            </div>
+
+            <div id="service2" class="thumbnail-container col-3 service2 outside-programs water-related">
+
+                <div class="hover-container">
+
+                    <div class="thumbnail" style="background-image:url(../img/sweden/service2.jpg)"></div>
+
+                    <div class="color-overlay"></div>
+
+                    <div class="service-desc">
+
+                        <h3>Guided Tours</h3>
+
+                        <p>Private guided tour to give you personalized experience in discovering.</p>
+
+                        <a href="https://globuzzer.mn.co/posts/h-in-stockholm-day-1-a-walk-in-the-old-city" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+
+                    </div>
+
+                </div>
+
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+
+            </div>
+
+            <div id="service3" class="thumbnail-container col-3 service3 outside-programs water-related">
+
+                <div class="hover-container">
+
+                    <div class="thumbnail" style="background-image:url(../img/sweden/service3.jpg)"></div>
+
+                    <div class="color-overlay"></div>
+
+                    <div class="service-desc">
+
+                        <h3>Museums</h3>
+
+                        <p>Stockholm's history, culture and unmissable sights. Perfect places to quench your thirst
+				for historical and contemporary Swedish art.</p>
+
+                        <a href="https://globuzzer.mn.co/posts/best-visiting-museums-in-stockholm-prices-locations" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+
+                    </div>
+
+                </div>
+
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+
+            </div>
+
+            <div id="service4" class="thumbnail-container col-3 service4 arts-museums outside-programs">
+
+                <div class="hover-container">
+
+                    <div class="thumbnail" style="background-image:url(../img/sweden/service4.jpg)"></div>
+
+                    <div class="color-overlay"></div>
+
+                    <div class="service-desc">
+
+                        <h3>Skansen</h3>
+
+                        <p>Encounter and witness pre-industrial era Swedish life-style and Scandinavian wild
+				animals.</p>
+
+                        <a href="https://globuzzer.mn.co/posts/top-10-stockholm-spring-activities" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+
+                    </div>
+
+                </div>
+
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+
+            </div>
+
+            <div id="service5" class="thumbnail-container col-3 service5 arts-museums inside-programs">
+
+                <div class="hover-container ">
+
+                    <div class="thumbnail" style="background-image:url(../img/sweden/service5.jpg)"></div>
+
+                    <div class="color-overlay"></div>
+
+                    <div class="service-desc">
+
+                        <h3>Food Trip</h3>
+
+                        <p>Munch, crunch, sip and slurp like a local.</p>
+
+                        <a href="https://globuzzer.mn.co/posts/unique-cafes-in-stockholm-from-a-locals-perspective" class="button-pink"><img src="../img/icon3_book.png" alt="book"> Read more</a>
+
+                    </div>
+
+                </div>
+
+                <a href="#" class="check"><img src="../img/icon3_check.png" alt="check"> <span class="choose-field">Choose</span></a>
+
+                <a href="#" class="heart"><img src="../img/icon3_hearth.png" alt="heart"> Cheer</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<footer>
+
+    <div class="privacy-copyright">
+
+        <ul class="socialmedia">
+
+            <li><a href="https://www.globuzzer.com/"><img class="gb-icon" src="../img/GB%20icon.png" alt="gb-icon"></a>
+
+            </li>
+
+            <li><a href="https://www.facebook.com/Globuzzer/"><i class="fab fa-facebook-f"></i></a></li>
+
+            <li><a href="https://twitter.com/globuzzer"><i class="fab fa-twitter"></i></a></li>
+
+            <li><a href="https://www.pinterest.at/globuzzer/"><i class="fab fa-pinterest"></i></a></li>
+
+            <li><a href="https://www.linkedin.com/company/globuzzer"><i class="fab fa-linkedin-in"></i></a></li>
+
+        </ul>
+
+        <ul class="nav-bar">
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Privacy</a></li>
+
+            <li><a href="#">Terms & Conditions</a></li>
+
+            <li><a href="#">Contact us</a></li>
+
+        </ul>
+
+        <br>
+
+        <p class="copyright">&copy; Copyright statement</p>
+
+    </div>
+
+</footer>
+
+
+
+<script type="text/javascript" src="../js/script.js"></script>
+
+<script type="text/javascript" src="filter.js"></script>
+
+<script type="text/javascript" src="booklet.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+
+
+    });
+
+</script>
+
+
+
+</body>
+
