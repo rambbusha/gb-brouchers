@@ -443,8 +443,8 @@
           <div class="fill"></div>
           <form id="filter" method="POST">
             <select id="filter-services" name="filter">
-              <option value="filter" selected hidden disabled disabled selected>Filters</option>
-			  <option value="filter" disabled selected>Select a filter</option>
+              <option value="filter" selected hidden disabled>Filters</option>
+			  <option value="filter" disabled>Select an option</option>
               <option value="arts">Arts & Museums</option>
               <option value="city">City Tour</option>
               <option value="food">Food Related</option>
@@ -457,6 +457,7 @@
           <form name="featured" method="POST">
             <select id="featured" class="pink-select">
               <option value="featured" selected hidden disabled>Featured</option>
+			  <option value="filter" disabled>Select an option</option>
               <option value="most-view">Most Viewed</option>
               <option value="most-cheered">Most Cheered</option>
               <option value="most-chosen">Most Chosen</option>
