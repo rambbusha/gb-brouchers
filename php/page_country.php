@@ -225,17 +225,17 @@
           join(array_map(function($package) {
             global $country, $pathPrefix;
             return ('
-              <div class="package-part ' . join(split(' ', $package['time']), '-') . '">
+              <div class="package-part ' . join(explode(' ', $package['time']), '-') . '">
                 <div class="package-image" style="background-image: url(\'' . $pathPrefix . $package['image'] . '\')"></div>
                 <div class="package-name">
-                  ' . strtoupper(join(split(' ', $package['name']), ' ')) . '<br>PACKAGE
+                  ' . strtoupper(join(explode(' ', $package['name']), ' ')) . '<br>PACKAGE
                 </div>
                 <div class="package-button">
                   <a href="' . $pathPrefix . $package['key'] . '/index.php" class="edge-btn-pink">Choose</a>
                 </div>
                 <div class="package-hover">
                   <div class="name">
-                    ' . strtoupper(join(split(' ', $package['name']), ' ')) . '<br>PACKAGE
+                    ' . strtoupper(join(explode(' ', $package['name']), ' ')) . '<br>PACKAGE
                   </div>
                   <p class="package-desc">' . $package['description'] . '</p>
                 </div>
