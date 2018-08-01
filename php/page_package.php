@@ -399,7 +399,7 @@
                 <h2>Thank you for choosing our services!</h2>
                 <div>
                     <a href="<?php echo $pathPrefix; ?>my-package/my-package.php" class="button-pink">See My Package</a>
-                    <a href="#services-block" class="button-pink">All Services</a>
+                    <a href="#service"" class="button-pink">All Services</a>
                     <a href="#slideshow" class="button-pink go-back">Go Back</a>
                 </div>
             </div>
@@ -433,7 +433,7 @@
     <div id="featureButton">Featured</div>
 </div-->
 
-<div class="section services-section">
+<div class="section services-section" id="service">
     <div class="title">What is included in <?php echo $package['name'] . ' Package'; ?></div>
     <div class="services-all-container">
         <div class="services-header" id='filterForm'>
