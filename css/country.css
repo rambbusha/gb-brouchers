@@ -275,7 +275,7 @@
     height: 100%;
 }
 
-@media (max-width :424px)
+@media (max-width :425px)
 {
     .brochure-img {
         display:none;
@@ -304,11 +304,11 @@
 
 }
 
-@media (max-width :375px)
-{
+@media (max-width : 375px) {
+/* Styles */
     .menu a {
     font-weight: 500;
-    margin-left: 30px;    
+    margin-left: 10px;    
     color: #fff;
    }
     .brochure-img {
@@ -319,31 +319,65 @@
         height: 15px;
         margin-left: 10px;
     }
+    
     .selector-container .selector .body .name {
         margin: 0 15px 0 30px;
         font-size: 12px;
         font-weight: bold;
     }
+    .selector .selector-duration{
+        width:100%;
+    }
 
     .edge-btn-pink {
-        padding: 8px;
-        font-size: 13px;
+        padding: 5px;
+        font-size: 10px;
       
     }
     .package-part {
    
-    min-width: 130px;
+    min-width: 100px;
    
     }
-
 }
 
-@media  (min-width :425px) and (max-width :768px){
+@media (max-width : 320px) {
+    .section >.title{
+        font-size: 21px;    
+    }
+    
+    .img-header .content {
+        font-size: 30px;
+    }
+    
+     .edge-btn-pink {
+        padding: 5px;
+        font-size: 10px;
+      
+    }
+    
+    .selector-container {
+  
+    height: 65px;
+    
+    }
+    
+    .selector-container .selector .body {
+   
+    height: 46px;
+    
+    }
+    
+}
+
+
+
+@media  (min-width :768px){
 
     .section.welcome .welcome-container {
         max-width: 560px;
         padding: 40px 0 25px;
-        margin-left: 10px;
+        /*margin-left: 10px;*/
         display: flex;
         align-items: center;
         justify-content: space-between;
