@@ -440,6 +440,7 @@ header .menu {
 }*/
 .brochure-viewer .row {
     position: relative;
+	display:block;
 }
 .brochure-viewer .normalArrow {
    display: none;
@@ -504,6 +505,9 @@ header .menu {
 }
 #brochure-cover {
     background-size: cover;
+	min-width:60px;
+	position:relative;
+	top:20px;
 }
 .brochure-viewer .nameTag {
     position: absolute;
@@ -674,6 +678,7 @@ header .menu {
 }
 .lastBrochure div {
     margin: 20px auto;
+	padding-top:30px;
 }
 .lastBrochure a {
     display: block;
