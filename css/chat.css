@@ -1,0 +1,11 @@
+
+#PureChatWidget.purechat .purechat-widget-header .purechat-btn {
+  display: none !important;
+}
+
+#PureChatWidget.purechat {
+  position: fixed !important;
+  z-index: 10000 !important;
+  bottom: 75px !important;
+  right: 50px !important;
+}

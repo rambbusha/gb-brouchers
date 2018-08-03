@@ -1,0 +1,115 @@
+.h-icon {
+    position: absolute;
+    top: 430px;
+    left: 330px;
+    z-index: 10;
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+    pointer-events: none;
+}
+
+.icon-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+// Hand animation
+// -------------------------------------- */
+   .hand-icon {
+       position: relative;
+   }
+
+.hand {
+    background: #d1d1d1;
+    width: 5px;
+    height: 16px;
+    border-radius: 20px;
+    position: relative;
+    left: -5px;
+    margin-bottom: 17px;
+    transform: rotate(-20deg);
+    animation: handAnim 1.6s infinite;
+}
+
+/* hand */
+  .hand:after {
+       content: "";
+       background: #d1d1d1;
+       width: 17px;
+       height: 18px;
+       border-radius: 4px 8px 38px 15px;
+       transform: rotate(6deg) skewY(10deg);
+       position: absolute;
+       top: 13px;
+       left: -1px;
+   }
+
+/* thumb */
+  .hand:before {
+       content: "";
+       background: #d1d1d1;
+       width: 6px;
+       height: 17px;
+       border-radius: 2px 40px 20px 20px;
+       position: absolute;
+       top: 12px;
+       left: -6px;
+       transform: rotate(-38deg);
+   }
+
+/* circle */
+   .circle {
+       background-color: #d1d1d1;
+       width: 20px;
+       height: 20px;
+       border-radius: 50%;
+       position: absolute;
+       top: -7px;
+       left: -7px;
+       opacity: .5;
+       animation: circleAnim 1.6s infinite 2.1s;
+   }
+
+
+/* Hand animation */
+@keyframes handAnim {
+    0% {
+        top: 20px;
+        left: 50px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: -20px;
+        left: 0;
+        opacity: 0;
+    }
+}
+
+/* Circle animation */
+@keyframes circleAnim {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1196px) {
+
+    .h-icon {
+        display: none;
+    }
+}
