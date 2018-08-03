@@ -715,6 +715,7 @@ header .menu {
     text-align: center;
     text-align: center;
     text-align-last: center; /*for mozzila*/
+	position:relative;
 }
 #featured option {
     text-align: left;
