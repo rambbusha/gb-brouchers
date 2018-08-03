@@ -725,6 +725,7 @@ header .menu {
 #featured option {
     text-align: left;
 }
+
 #filter select {
     /*for firefox*/
     -moz-appearance: none;
@@ -1133,7 +1134,7 @@ footer .socialmedia svg {
         left: 25%;
     }
     .brochure .lastBrochure div {
-        margin: 20px auto;
+		display:none;
     }
     .brochure .lastBrochure a {
         width: 8em;
@@ -1297,6 +1298,9 @@ footer .socialmedia svg {
     .lastBrochure {
         top: 71.5%;
     }
+	.lastBrochure div{
+		display:none;
+	}
     .lastBrochure h2 {
         padding-bottom: 18px;
     }
@@ -1328,6 +1332,15 @@ footer .socialmedia svg {
         line-height: 30px;
         font-size: 15px;
     }
+	.fine-hr{
+		display:none;
+	}
+	.services-section .services-intro {
+		display:none;
+	}
+	.pink-select{
+		display:none;
+	}
 }
 @media (max-width: 378px) {
     .contact .section-heading, .address, .mail-phone, .contact-btn {
