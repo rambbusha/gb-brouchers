@@ -1335,11 +1335,9 @@ footer .socialmedia svg {
 	.fine-hr{
 		display:none;
 	}
-	.services-section .services-intro {
-		display:none;
-	}
 	.pink-select{
-		display:none;
+		position:relative;
+		top:80px;
 	}
 }
 @media (max-width: 378px) {
